@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ASTRA AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  </head>
+  <body>
+    <button class="chatbot-toggler">
+     <img class="chatbot-toggler" src="{{ url_for('static', filename='9.png') }}">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+<!--        <h2>ASTRA AI</h2>-->
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <div>
+        <img id="logo" src="{{ url_for('static', filename='logo.png') }}" alt="Description of the image">
+      <p style="text-align: center;">Greetings from Aruvi</p>
+      </div>
+
+      <ul class="chatbox">
+        <li class="chat incoming" style="padding-top: 20px; padding-bottom: 20px;">
+<!--          <span ><img src="{{ url_for('static', filename='AIlogo3.png') }}" width="22px" height="25px"></span>-->
+<!--          <p>Welcome to Astralinx AI Support<br>We are glad to serve you in online!</p>-->
+<!--          -->
+
+        </li>
+
+        
+      </ul>
+	  <form id="chat-form" class="chat-input" >
+		<textarea id="user-input" placeholder="Ask me about Astralinx" spellcheck="false" required></textarea>
+<!--        <span type="submit" class="material-symbols-rounded">send</span>-->
+<button class="material-symbols-rounded" style="background: none; border: none; color: #000; border-radius: 50%;" type="submit">Send</button>
+	  </form>
+      <!-- <div class="chat-input"> -->
+	  
+	  <!-- <form id="chat-form"> -->
+            <!-- <input type="text" id="user-input" placeholder="Enter a message..." spellcheck="false" required> -->
+            <!-- <button type="submit">Send</button> -->
+        <!-- </form> -->
+      <!-- </div> -->
+
+<!--      <div class="powered-by">
+      <h5 style="color:#245CAD;padding-right:10px;">Powered by Gemini <img class="img-fluid" src="{{ url_for('static', filename='Geminilogo.png') }}" width="15px" height="15px"></h5>
+      </div>
+
+    </div> -->
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
